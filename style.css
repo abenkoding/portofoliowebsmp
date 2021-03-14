@@ -1,0 +1,33 @@
+body{
+    font-family: "Raleway";
+    font-size: 12pt;
+}
+.gradient {
+    padding-top: 10rem;
+    background-color: #071935;
+    background: linear-gradient(
+        135deg,
+        rgb(4, 47, 107) 0%,
+        rgba(105, 0, 199, 1) 100%
+    );
+}
+
+#tentang {
+    background-color: #fff;
+    font-size: 12pt;
+}
+
+#project {
+    background-color: #0d6efd;
+    /* background: linear-gradient(
+        135deg,
+        rgb(4, 47, 107) 0%,
+        rgba(105, 0, 199, 1) 100%
+    ); */
+}
+
+section {
+    padding-top: 8rem;
+    font-family: "Raleway";
+    font-size: 12pt;
+}
