@@ -181,10 +181,86 @@
             <div class="row text-center mb-3">
                 <div class="col">
                     <h2 class="fw-bold">Presensi Belajar Dari Rumah</h2>
-		    <p id="test"></p>
-		    	<script>
-                        document.getElementById("test").innerHTML = Date();
-                    	</script>
+		    <script>
+                //deklarasi variabel tanggal
+                var nmhari,nmbulan;
+                var tgl = new Date();
+
+                //proses menetukan nama hari
+                switch (tgl.getDay())
+                {
+                    case 0 :
+                        nmhari="Minggu";
+                        break;
+                    case 1 :
+                        nmhari="Senin";
+                        break;
+                    case 2 :
+                        nmhari="Selasa";
+                        break;
+                    case 3 :
+                        nmhari="Rabu";
+                        break;
+                    case 4 :
+                        nmhari="Kamis";
+                        break;
+                    case 5 :
+                        nmhari="Jumat";
+                        break;
+                    case 6 :
+                        nmhari="Sabtu";
+                        break;
+                }
+
+                //logika nama bulan
+                switch (tgl.getMonth())
+                {
+                    case 0 :
+                        nmbulan="Januari";
+                        break;
+                    case 1 :
+                        nmbulan="Februari";
+                        break;
+                    case 2 :
+                        nmbulan="Maret";
+                        break;
+                    case 3 :
+                        nmbulan="April";
+                        break;
+                    case 4 :
+                        nmbulan="Mei";
+                        break;
+                    case 5 :
+                        nmbulan="Juni";
+                        break;
+                    case 6 :
+                        nmbulan="Juli";
+                        break;
+                    case 7 :
+                        nmbulan="Agustus";
+                        break;
+                    case 8 :
+                        nmbulan="September";
+                        break;
+                    case 9 :
+                        nmbulan="Oktober";
+                        break;
+                    case 10 :
+                        nmbulan="November";
+                        break;
+                    case 11 :
+                        nmbulan="Desember";
+                        break;
+                    default:
+                        document.write("");
+                        break;
+                    
+                }
+
+                // menampilkan nama hari tanggal
+                document.write("<h5>Hari Ini : " + nmhari + "," + tgl.getDate() + " " + nmbulan + " " +  tgl.getFullYear() + "</h5>");
+    
+            </script>
                 </div>
             </div>
             <div class="row justify-content-center">
